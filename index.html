@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computing Innovation and New Technologies | Course Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-navy { background-color: #003087; }
+        .text-navy { color: #003087; }
+        .fade-in { animation: fadeIn 0.8s ease-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+
+    <!-- Header / Navigation -->
+    <header class="bg-navy text-white shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                <div class="w-10 h-10 bg-white rounded-md flex items-center justify-center">
+                    <span class="text-navy font-bold text-xl">CI</span>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-tight">Computing Innovation</h1>
+                    <p class="text-xs uppercase tracking-widest opacity-80">3rd-Year Undergraduate (CS/IT)</p>
+                </div>
+            </div>
+            <ul class="flex flex-wrap justify-center space-x-6 text-sm font-medium">
+                <li><a href="index.html" class="hover:text-gray-300 transition-colors border-b-2 border-white pb-1">Overview</a></li>
+                <li><a href="syllabus.html" class="hover:text-gray-300 transition-colors">Syllabus</a></li>
+                <li><a href="schedule.html" class="hover:text-gray-300 transition-colors">Schedule</a></li>
+                <li><a href="lectures.html" class="hover:text-gray-300 transition-colors">Lectures</a></li>
+                <li><a href="projects.html" class="hover:text-gray-300 transition-colors">Projects</a></li>
+                <li><a href="resources.html" class="hover:text-gray-300 transition-colors">Resources</a></li>
+                <li><a href="staff.html" class="hover:text-gray-300 transition-colors text-white/90">Staff</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-white border-b">
+        <div class="container mx-auto px-6 py-16 md:py-24 text-center fade-in">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-navy mb-6">Computing Innovation and New Technologies</h2>
+            <p class="max-w-2xl mx-auto text-lg text-gray-600 mb-10">
+                Exploring the frameworks, processes, and societal impacts of emerging computing technologies.
+                From Generative AI to Quantum Computing, we analyze what drives innovation in the digital age.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="syllabus.html" class="bg-navy text-white px-8 py-3 rounded-md font-semibold hover:bg-blue-900 transition-all shadow-md">View Syllabus</a>
+                <a href="schedule.html" class="bg-gray-100 text-navy px-8 py-3 rounded-md font-semibold hover:bg-gray-200 transition-all">Course Schedule</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Info Grid -->
+    <section class="container mx-auto px-6 py-12 -mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <h3 class="font-bold text-navy mb-2 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Time & Location
+                </h3>
+                <p class="text-sm text-gray-600">Lecture: [Day] [Time] — [Building/Room]</p>
+                <p class="text-sm text-gray-600">Tutorial: [Day] [Time] — [Building/Room]</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <h3 class="font-bold text-navy mb-2 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    Instructor
+                </h3>
+                <p class="text-sm text-gray-600">[Instructor Name]</p>
+                <p class="text-sm text-gray-600">Office Hours: [Day] [Time]</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <h3 class="font-bold text-navy mb-2 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    Prerequisites
+                </h3>
+                <p class="text-sm text-gray-600">Intermediate programming</p>
+                <p class="text-sm text-gray-600">Basic systems knowledge</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Overview -->
+    <main class="container mx-auto px-6 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-navy mb-8 border-b pb-4">Course Overview</h2>
+
+            <p class="mb-6">
+                Most of the applications and services we interact with today are driven by rapid innovations in computing. This course provides a comprehensive exploration of how these innovations emerge, how they are evaluated, and their broader implications on society and industry.
+            </p>
+
+            <p class="mb-6">
+                This class teaches the design, implementation, and analysis techniques required to understand and propose new technology applications. Topics include innovation frameworks, disruptive potential analysis, historical case studies, and the ethical, legal, and economic implications of computing technology.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8 mt-12">
+                <div>
+                    <h3 class="text-xl font-bold text-navy mb-4">What You'll Learn</h3>
+                    <ul class="space-y-2 list-disc list-inside text-gray-700">
+                        <li>Innovation concepts and frameworks</li>
+                        <li>Evaluating emerging tech feasibility</li>
+                        <li>Case studies of disruptive innovations</li>
+                        <li>Prototyping new tech applications</li>
+                        <li>Ethical & societal implications</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-navy mb-4">Assessment</h3>
+                    <ul class="space-y-2 list-disc list-inside text-gray-700">
+                        <li>Participation & Reading (15–20%)</li>
+                        <li>Midterm Exam (20%)</li>
+                        <li>Group Project (30–35%)</li>
+                        <li>Final Exam / Report (25–30%)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-16 p-8 bg-blue-50 rounded-xl border border-blue-100">
+                <h3 class="text-xl font-bold text-navy mb-4">Group Project</h3>
+                <p class="text-gray-700 mb-4">
+                    Students will work in teams of 3–4 to select an emerging technology or innovation idea. You will deliver a comprehensive analysis report, a presentation, and an optional high-level prototype using no-code tools, Python, or Figma.
+                </p>
+                <a href="projects.html" class="text-navy font-semibold hover:underline flex items-center">
+                    Learn more about projects
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 border-t mt-24 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-500 text-sm mb-4">&copy; 2026 [Your University] | Computing Innovation and New Technologies</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://github.com/victordeman/Computing-Innovatios" class="text-gray-400 hover:text-navy transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
