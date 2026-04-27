@@ -12,6 +12,7 @@
         body { font-family: 'Inter', sans-serif; }
         .bg-navy { background-color: #003087; }
         .text-navy { color: #003087; }
+        details summary::-webkit-details-marker { display: none; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 leading-relaxed">
@@ -42,38 +43,275 @@
 
     <main class="container mx-auto px-6 py-16">
         <h2 class="text-4xl font-extrabold text-navy mb-4 text-center">Lectures</h2>
-        <p class="text-center text-gray-600 mb-12">Lecture slides will be posted here shortly after each class.</p>
+        <p class="text-center text-gray-600 mb-12">Lecture slides will be posted here shortly after each class. Click on a week to see the summary.</p>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Week 1 -->
-            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex flex-col justify-between">
-                <div>
-                    <span class="text-xs font-bold text-navy uppercase tracking-wider">Week 1</span>
-                    <h3 class="text-lg font-bold mt-1 mb-2">Introduction to Innovation</h3>
-                </div>
-                <a href="#" class="text-sm font-medium text-gray-400 cursor-not-allowed">Week1.pdf (Coming soon)</a>
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none">
+                        <div>
+                            <span class="text-xs font-bold text-navy uppercase tracking-wider">Week 1</span>
+                            <h3 class="text-lg font-bold mt-1">Introduction to Innovation</h3>
+                        </div>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 text-sm">
+                        <p class="mb-4">This week covers the foundational concepts of innovation in the computing field, exploring historical contexts and defining what constitutes a breakthrough in technology today.</p>
+                        <a href="#" class="text-sm font-medium text-gray-400 cursor-not-allowed">Week1.pdf (Coming soon)</a>
+                    </div>
+                </details>
             </div>
 
-            <!-- Weeks 2-14 -->
-            <script>
-                const topics = [
-                    "Innovation Frameworks", "Emerging Tech Evaluation", "Case Study: Personal Computing",
-                    "Case Study: The Internet", "Disruptive Potential", "Midterm Review",
-                    "Artificial Intelligence", "Blockchain & Web3", "Quantum Computing",
-                    "Ethics in Computing", "Legal & Economic Impacts", "Future Forecasting", "Final Presentations"
-                ];
-                for (let i = 2; i <= 14; i++) {
-                    document.write(`
-                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex flex-col justify-between opacity-60">
-                            <div>
-                                <span class="text-xs font-bold text-navy uppercase tracking-wider">Week ${i}</span>
-                                <h3 class="text-lg font-bold mt-1 mb-2">${topics[i-2] || '[Topic Placeholder]'}</h3>
-                            </div>
-                            <a href="#" class="text-sm font-medium text-gray-400 cursor-not-allowed">Week${i}.pdf (Coming soon)</a>
+            <!-- Week 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none">
+                        <div>
+                            <span class="text-xs font-bold text-navy uppercase tracking-wider">Week 2</span>
+                            <h3 class="text-lg font-bold mt-1">Innovation Frameworks</h3>
                         </div>
-                    `);
-                }
-            </script>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 text-sm">
+                        <p class="mb-4">We will examine various frameworks used to understand and categorize innovation, including incremental versus radical changes, and how these models apply to modern software and hardware development cycles.</p>
+                        <a href="#" class="text-sm font-medium text-gray-400 cursor-not-allowed">Week2.pdf (Coming soon)</a>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Week 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none">
+                        <div>
+                            <span class="text-xs font-bold text-navy uppercase tracking-wider">Week 3</span>
+                            <h3 class="text-lg font-bold mt-1">Emerging Tech Evaluation</h3>
+                        </div>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 text-sm">
+                        <p class="mb-4">This session focuses on the methodologies for assessing new technologies, considering factors like technical feasibility, market readiness, and the potential for long-term sustainability in a competitive digital landscape.</p>
+                        <a href="#" class="text-sm font-medium text-gray-400 cursor-not-allowed">Week3.pdf (Coming soon)</a>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Week 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none">
+                        <div>
+                            <span class="text-xs font-bold text-navy uppercase tracking-wider">Week 4</span>
+                            <h3 class="text-lg font-bold mt-1">Case Study: Personal Computing</h3>
+                        </div>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 text-sm">
+                        <p class="mb-4">A deep dive into the evolution of personal computers, analyzing how they transformed from niche hobbyist machines into essential tools that redefined productivity and communication for billions worldwide.</p>
+                        <a href="#" class="text-sm font-medium text-gray-400 cursor-not-allowed">Week4.pdf (Coming soon)</a>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Week 5 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none">
+                        <div>
+                            <span class="text-xs font-bold text-navy uppercase tracking-wider">Week 5</span>
+                            <h3 class="text-lg font-bold mt-1">Case Study: The Internet</h3>
+                        </div>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 text-sm">
+                        <p class="mb-4">We explore the origins and rapid expansion of the global internet, discussing its role as a platform for further innovation and the architectural decisions that enabled its massive scale.</p>
+                        <a href="#" class="text-sm font-medium text-gray-400 cursor-not-allowed">Week5.pdf (Coming soon)</a>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Week 6 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none">
+                        <div>
+                            <span class="text-xs font-bold text-navy uppercase tracking-wider">Week 6</span>
+                            <h3 class="text-lg font-bold mt-1">Disruptive Potential</h3>
+                        </div>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 text-sm">
+                        <p class="mb-4">This lecture investigates the concept of disruptive innovation, identifying characteristics of technologies that displace established market leaders and create entirely new value networks across various industries.</p>
+                        <a href="#" class="text-sm font-medium text-gray-400 cursor-not-allowed">Week6.pdf (Coming soon)</a>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Week 7 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none">
+                        <div>
+                            <span class="text-xs font-bold text-navy uppercase tracking-wider">Week 7</span>
+                            <h3 class="text-lg font-bold mt-1">Midterm Review</h3>
+                        </div>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 text-sm">
+                        <p class="mb-4">A comprehensive review session covering all topics from the first six weeks, designed to help students consolidate their knowledge and prepare for the upcoming midterm examination on innovation theory.</p>
+                        <a href="#" class="text-sm font-medium text-gray-400 cursor-not-allowed">Week7.pdf (Coming soon)</a>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Week 8 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none">
+                        <div>
+                            <span class="text-xs font-bold text-navy uppercase tracking-wider">Week 8</span>
+                            <h3 class="text-lg font-bold mt-1">Artificial Intelligence</h3>
+                        </div>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 text-sm">
+                        <p class="mb-4">We analyze the current state and future trajectories of AI, including machine learning and neural networks, and how these technologies are being integrated into everyday applications and industrial processes.</p>
+                        <a href="#" class="text-sm font-medium text-gray-400 cursor-not-allowed">Week8.pdf (Coming soon)</a>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Week 9 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none">
+                        <div>
+                            <span class="text-xs font-bold text-navy uppercase tracking-wider">Week 9</span>
+                            <h3 class="text-lg font-bold mt-1">Blockchain & Web3</h3>
+                        </div>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 text-sm">
+                        <p class="mb-4">This week introduces decentralized ledger technologies and the concept of Web3, exploring how blockchain can enable new forms of digital ownership, trustless transactions, and decentralized organizational structures.</p>
+                        <a href="#" class="text-sm font-medium text-gray-400 cursor-not-allowed">Week9.pdf (Coming soon)</a>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Week 10 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none">
+                        <div>
+                            <span class="text-xs font-bold text-navy uppercase tracking-wider">Week 10</span>
+                            <h3 class="text-lg font-bold mt-1">Quantum Computing</h3>
+                        </div>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 text-sm">
+                        <p class="mb-4">An introduction to the principles of quantum mechanics applied to computing, discussing the potential for quantum machines to solve problems that are currently intractable for classical computers in many fields.</p>
+                        <a href="#" class="text-sm font-medium text-gray-400 cursor-not-allowed">Week10.pdf (Coming soon)</a>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Week 11 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none">
+                        <div>
+                            <span class="text-xs font-bold text-navy uppercase tracking-wider">Week 11</span>
+                            <h3 class="text-lg font-bold mt-1">Ethics in Computing</h3>
+                        </div>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 text-sm">
+                        <p class="mb-4">We address the ethical considerations surrounding new technologies, including data privacy, algorithmic bias, and the social responsibility of engineers when developing systems that impact millions of people.</p>
+                        <a href="#" class="text-sm font-medium text-gray-400 cursor-not-allowed">Week11.pdf (Coming soon)</a>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Week 12 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none">
+                        <div>
+                            <span class="text-xs font-bold text-navy uppercase tracking-wider">Week 12</span>
+                            <h3 class="text-lg font-bold mt-1">Legal & Economic Impacts</h3>
+                        </div>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 text-sm">
+                        <p class="mb-4">This session examines the regulatory landscapes and economic shifts driven by computing innovations, covering topics such as intellectual property rights, competition law, and the gig economy's growth.</p>
+                        <a href="#" class="text-sm font-medium text-gray-400 cursor-not-allowed">Week12.pdf (Coming soon)</a>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Week 13 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none">
+                        <div>
+                            <span class="text-xs font-bold text-navy uppercase tracking-wider">Week 13</span>
+                            <h3 class="text-lg font-bold mt-1">Future Forecasting</h3>
+                        </div>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 text-sm">
+                        <p class="mb-4">Students will learn techniques for predicting future technology trends, using current data and historical patterns to envision the next frontiers of computing and how to prepare for them.</p>
+                        <a href="#" class="text-sm font-medium text-gray-400 cursor-not-allowed">Week13.pdf (Coming soon)</a>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Week 14 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none">
+                        <div>
+                            <span class="text-xs font-bold text-navy uppercase tracking-wider">Week 14</span>
+                            <h3 class="text-lg font-bold mt-1">Final Presentations</h3>
+                        </div>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 text-sm">
+                        <p class="mb-4">The course concludes with student teams presenting their final projects, showcasing their research and prototypes while receiving feedback from peers and instructors on their innovative ideas and analysis.</p>
+                        <a href="#" class="text-sm font-medium text-gray-400 cursor-not-allowed">Week14.pdf (Coming soon)</a>
+                    </div>
+                </details>
+            </div>
+
         </div>
     </main>
 
