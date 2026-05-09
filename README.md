@@ -29,7 +29,7 @@ To deploy this website to GitHub Pages:
    - Go to your repository **Settings**.
    - Click on **Pages** in the left sidebar.
    - Under **Build and deployment > Branch**, select `main` and click **Save**.
-4. **Live Site:** Your site will be live at `https://[your-username].github.io/Computing-Innovatios/` (replace `[your-username]` with your actual GitHub username).
+4. **Live Site:** Your site will be live at `https://example-user.github.io/Computing-Innovatios/` (replace `example-user` with your actual GitHub username).
 
 ## License
-&copy; 2026 [Your University]. All rights reserved.
+&copy; 2026 The University. All rights reserved.
